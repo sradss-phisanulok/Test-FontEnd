@@ -236,7 +236,7 @@ function App() {
       <div className="py-8 px-4 bg-gray-900 text-white text-center">
         <p>Made with ❤️ just for you</p>
         <p className="text-sm text-gray-400 mt-2">
-          © {new Date().getFullYear()}
+          13/04/68
         </p>
       </div>
 
