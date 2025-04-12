@@ -15,7 +15,7 @@ function App() {
     "/IMG_9912.PNG",
     "/IMG_3113.JPG",
     "/IMG_8373.JPG",
-    "/IMG_2387.JPG"
+    "/IMG_2387.JPG",
   ]);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -100,9 +100,9 @@ function App() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `url(/IMG_2387.JPG)`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.6) blur(4px)',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "brightness(0.6) blur(4px)",
           }}
         ></div>
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -169,7 +169,6 @@ function App() {
 
       {/* Birthday Message Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-purple-200 via-pink-200 to-red-200">
-
         <div className="max-w-4xl mx-auto text-center">
           <div className="relative bg-white p-8 md:p-12 rounded-xl shadow-2xl">
             <div className="absolute -top-5 left-1/2 transform -translate-x-1/2">
@@ -181,13 +180,16 @@ function App() {
             </h2>
 
             <p className="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed">
-              ปีนี้อายุ 22 ขวบแล้วนะเหม่งปีนี้จะได้เป็นพี่ปี 4 แล้วเก่งมาก ๆ เบย อ่าน นส. บ้างนอนดูซีรีย์บ้าง
-              แต่ก็เกรดตึง เก่งฝุดๆ ปีนี้เหม่งเป็นพี่ใหญ่ในมอแล้วต้องเข้มแข็งมากๆนะ ถึงแม้ไม่มีเค้าพาไปกินข้าว
-              พาไปซื้อของ พาไปขี่รถเล่น แต่เค้าเชื่อว่าเหม่งสามารถอยู่ได้แน่นอน เค้าเป็นกำลังใจให้นะ ชวนเพื่อนๆ ออกไปเที่ยวบ่อยๆ
-              ด้วยละ จะได้ไม่เหงา มีอะไรโทรหาเค้าได้ตลอดเลยนะ เค้าจะอยู่กับเหม่งตรงนี้ไม่ไปไหนแน่นอน !! 
-              ที่ผ่านมาขอบคุณนะที่อยู่เคียงข้างเค้ามาตลอด ขอโทษที่ทำตัวไม่ดีเอาแต่ใจนะ เค้ารู้สึกเสียใจกับสิ่งที่ผ่านมา
-              วันสุดท้ายที่นอนมอแล้วไม่ได้กอดเหม่ง มานึกขึ้นได้ตอนที่เราต้องจากกันแล้ว ไว้ตอนที่เราพร้อมและทำงานกันแล้ว
-              เรามาอยู่ด้วยกันนอนกอดกันทุกวันนะ เค้าจะรอเหม่ง รักเหม่งนะ.
+              ปีนี้อายุ 22 ขวบแล้วนะเหม่งปีนี้จะได้เป็นพี่ปี 4 แล้วเก่งมาก ๆ เบย
+              อ่าน นส. บ้างนอนดูซีรีย์บ้าง แต่ก็เกรดตึง เก่งฝุดๆ
+              ปีนี้เหม่งเป็นพี่ใหญ่ในมอแล้วต้องเข้มแข็งมากๆนะ
+              ถึงแม้ไม่มีเค้าพาไปกินข้าว พาไปซื้อของ พาไปขี่รถเล่น
+              แต่เค้าเชื่อว่าเหม่งสามารถอยู่ได้แน่นอน เค้าเป็นกำลังใจให้นะ
+              ชวนเพื่อนๆ ออกไปเที่ยวบ่อยๆ ด้วยละ จะได้ไม่เหงา
+              มีอะไรโทรหาเค้าได้ตลอดเลยนะ เค้าจะอยู่กับเหม่งตรงนี้ไม่ไปไหนแน่นอน
+              !! ที่ผ่านมาขอบคุณนะที่อยู่เคียงข้างเค้ามาตลอด
+              ขอให้เหม่งสุขภาพร่างกายแข็งแรงอยู่กับเค้าไปนานนานนนน
+              เค้าย้ากเหม่งมักๆ จุ้บๆ
             </p>
 
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
@@ -217,18 +219,12 @@ function App() {
           </h2>
 
           {videoVisible && (
-            <div className="rounded-lg overflow-hidden shadow-2xl transform transition hover:scale-102 relative aspect-video">
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60">
-                <p className="text-xl text-center px-4">
-                  Your video would appear here
-                </p>
-              </div>
+            <div className="rounded-lg overflow-hidden shadow-2xl transform transition hover:scale-102 flex justify-center">
               <video
-                className="w-full h-full object-cover"
+                className="h-auto max-h-screen w-auto"
                 controls
-                poster="https://dummyimage.com/1280x720/ff4081/fff.png&text=Birthday+Video"
               >
-                <source src="your-video-url.mp4" type="video/mp4" />
+                <source src="video_hbd.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -247,11 +243,9 @@ function App() {
       <section className="py-16 px-4 bg-gradient-to-r from-purple-200 via-pink-200 to-red-200">
         <div className="max-w-4xl mx-auto text-center">
           <div className="relative bg-white p-8 md:p-12 rounded-xl shadow-2xl">
-
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
               ขอบคุณที่เกิดมานะ ❤️
             </h2>
-
           </div>
         </div>
       </section>
